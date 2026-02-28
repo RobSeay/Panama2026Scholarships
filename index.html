@@ -1,1 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GBB IU — Panama 2026 Flight Scholarships</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
 
+  <!-- ===== STICKY NAV ===== -->
+  <header class="nav-wrap" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="{{WEBSITE_HOME_LINK}}" class="nav-brand">GBB IU</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#costs">Costs</a></li>
+        <li><a href="#scholarships">Scholarships</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#policies">Policies</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="hero-wave" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,192L60,186.7C120,181,240,171,360,181.3C480,192,600,224,720,218.7C840,213,960,171,1080,160C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" fill="var(--accent-light)" />
+        </svg>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-eyebrow">Global Business Brigades at Indiana University</div>
+        <h1 id="hero-title">Panama 2026<br /><span class="hero-accent">Flight Scholarships</span></h1>
+        <p class="hero-sub">May 9–15, 2026 · Three competitive awards designed to open doors for passionate students committed to consulting and community impact.</p>
+        <div class="hero-dates" role="list" aria-label="Key dates">
+          <div class="hero-date" role="listitem">
+            <span class="date-label">Applications Open</span>
+            <span class="date-val">{{APP_OPEN_DATE}}</span>
+          </div>
+          <div class="hero-date" role="listitem">
+            <span class="date-label">Applications Close</span>
+            <span class="date-val">{{APP_CLOSE_DATE}}</span>
+          </div>
+          <div class="hero-date" role="listitem">
+            <span class="date-label">Decisions Announced</span>
+            <span class="date-val">{{DECISION_DATE}}</span>
+          </div>
+        </div>
+        <div class="hero-ctas">
+          <a href="{{APPLICATION_LINK}}" class="btn btn-primary" aria-label="Apply for a flight scholarship">Apply Now</a>
+          <a href="{{GROUPME_LINK}}" class="btn btn-outline" aria-label="Join the GroupMe for updates">Join GroupMe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COST BREAKDOWN ===== -->
+    <section class="section" id="costs" aria-labelledby="costs-title">
+      <div class="container">
+        <div class="section-label">Understanding the Investment</div>
+        <h2 id="costs-title">What Does the Trip Cost?</h2>
+        <p class="section-intro">We want cost to be a conversation, not a barrier. Here's exactly what you're looking at — and what the scholarship covers.</p>
+        <div class="cost-grid">
+          <div class="cost-card cost-card--base">
+            <div class="cost-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+            <div class="cost-amount">$1,590</div>
+            <div class="cost-title">Program Fee</div>
+            <p>Covers in-country transportation, lodging, meals, materials, and access to the Global Brigades consulting framework. <strong>All scholarship recipients remain responsible for this fee.</strong> Fundraising efforts may reduce this amount, but the student is ultimately responsible for any balance.</p>
+          </div>
+          <div class="cost-card cost-card--flight">
+            <div class="cost-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3a1 1 0 0 0-2 0v6l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+            </div>
+            <div class="cost-amount">~$400–$700</div>
+            <div class="cost-title">Round-Trip Flight</div>
+            <p>Flight cost varies by booking window and departure city. GBB books flights <strong>directly on your behalf</strong> — you do not purchase a ticket yourself. Flight booking is subject to confirmed arrival/departure windows provided by Global Brigades.</p>
+          </div>
+          <div class="cost-card cost-card--scholarship">
+            <div class="cost-icon scholarship-check" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="cost-amount">Up to $567</div>
+            <div class="cost-title">Scholarship Coverage</div>
+            <p>Each of the three scholarships covers the flight cost up to <strong>$567 (round-trip)</strong>. If your flight exceeds this cap, the remaining balance is your responsibility. The scholarship applies to the flight only — not the program fee.</p>
+          </div>
+        </div>
+        <div class="cost-note" role="note">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>Total out-of-pocket <em>with</em> scholarship: approximately $1,590 program fee + any flight amount above $567. Total <em>without</em> scholarship: approximately $1,590 + full flight cost.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCHOLARSHIP CARDS ===== -->
+    <section class="section section--alt" id="scholarships" aria-labelledby="scholarships-title">
+      <div class="container">
+        <div class="section-label">Three Awards Available</div>
+        <h2 id="scholarships-title">Scholarship Opportunities</h2>
+        <p class="section-intro">Each scholarship recognizes a different dimension of what it takes to make a service trip meaningful. Find the one that speaks to your story.</p>
+        <div class="scholarship-grid">
+
+          <!-- Card 1 -->
+          <article class="scholarship-card" aria-labelledby="sc1-title">
+            <div class="card-number" aria-hidden="true">01</div>
+            <div class="card-tag">Access &amp; Impact</div>
+            <h3 id="sc1-title">Access &amp; Impact Scholarship</h3>
+            <p class="card-purpose">For students who face real financial barriers to participation — and who will bring genuine commitment to the communities we serve.</p>
+            <div class="card-section">
+              <div class="card-section-title">Who Should Apply</div>
+              <p>Students for whom the combined cost of the program fee and flight represents a meaningful financial hardship. This award prioritizes demonstrated need alongside motivation.</p>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">What It Covers</div>
+              <p>Round-trip flight, booked by GBB, up to $567.</p>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">Selection Criteria</div>
+              <ul class="criteria-list" aria-label="Selection criteria for Access and Impact Scholarship">
+                <li>Demonstrated financial need or barrier to participation</li>
+                <li>Clear articulation of why this trip is meaningful to you personally</li>
+                <li>Commitment to completing all pre-trip requirements and the $1,590 program fee</li>
+                <li>Alignment with GBB IU's values of service, humility, and learning</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="scholarship-card scholarship-card--featured" aria-labelledby="sc2-title">
+            <div class="card-number" aria-hidden="true">02</div>
+            <div class="card-tag">Consulting Excellence</div>
+            <h3 id="sc2-title">Consulting Excellence Scholarship</h3>
+            <p class="card-purpose">For students who bring strong analytical and consulting skills — and who will deliver exceptional value to our partner businesses in Panama.</p>
+            <div class="card-section">
+              <div class="card-section-title">Who Should Apply</div>
+              <p>Students with demonstrated consulting, analytical, or business problem-solving experience — through coursework, internships, case competitions, or student organizations.</p>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">What It Covers</div>
+              <p>Round-trip flight, booked by GBB, up to $567.</p>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">Selection Criteria</div>
+              <ul class="criteria-list" aria-label="Selection criteria for Consulting Excellence Scholarship">
+                <li>Evidence of consulting or analytical skill (resume, essay, interview)</li>
+                <li>Ability to communicate structured thinking clearly</li>
+                <li>Track record of preparation and professionalism</li>
+                <li>Motivation to apply skills in a resource-constrained, real-world setting</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="scholarship-card" aria-labelledby="sc3-title">
+            <div class="card-number" aria-hidden="true">03</div>
+            <div class="card-tag">Leadership &amp; Ambassador</div>
+            <h3 id="sc3-title">Leadership &amp; Ambassador Scholarship</h3>
+            <p class="card-purpose">For students who will actively recruit, represent, and grow GBB IU — carrying the mission beyond the trip itself.</p>
+            <div class="card-section">
+              <div class="card-section-title">Who Should Apply</div>
+              <p>Students with a history of campus leadership, community building, or organizational involvement who commit to serving as an ambassador for GBB IU after returning.</p>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">What It Covers</div>
+              <p>Round-trip flight, booked by GBB, up to $567.</p>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">Selection Criteria</div>
+              <ul class="criteria-list" aria-label="Selection criteria for Leadership and Ambassador Scholarship">
+                <li>Demonstrated leadership in clubs, organizations, or community settings</li>
+                <li>Specific vision for how you will represent and promote GBB IU post-trip</li>
+                <li>Ability to inspire and connect with prospective members</li>
+                <li>Enthusiasm for the GBB mission beyond the trip itself</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TIMELINE ===== -->
+    <section class="section" id="timeline" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section-label">Key Dates</div>
+        <h2 id="timeline-title">Application Timeline</h2>
+        <p class="section-intro">Mark your calendar. Missing a deadline — especially the passport window — may result in forfeiture of the scholarship.</p>
+        <ol class="timeline" aria-label="Application timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">1</div>
+            <div class="timeline-body">
+              <div class="timeline-date">{{APP_OPEN_DATE}}</div>
+              <div class="timeline-event">Applications Open</div>
+              <p>The application form, resume upload, and short essay prompts go live. Join the GroupMe for reminders and updates.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">2</div>
+            <div class="timeline-body">
+              <div class="timeline-date">{{APP_CLOSE_DATE}}</div>
+              <div class="timeline-event">Applications Close</div>
+              <p>All materials — application form, resume, and essays — must be submitted by this date. Late submissions will not be considered.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">3</div>
+            <div class="timeline-body">
+              <div class="timeline-date">{{INTERVIEW_WINDOW}}</div>
+              <div class="timeline-event">Finalist Interviews</div>
+              <p>Finalists are invited to a 10–15 minute Zoom interview. All finalists are asked the same questions and evaluated on a standard scoring rubric.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">4</div>
+            <div class="timeline-body">
+              <div class="timeline-date">{{DECISION_DATE}}</div>
+              <div class="timeline-event">Scholarship Decisions Announced</div>
+              <p>All applicants are notified by email. Recipients receive acceptance instructions and next steps.</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item--urgent">
+            <div class="timeline-marker" aria-hidden="true">5</div>
+            <div class="timeline-body">
+              <div class="timeline-date">Within 48 hours of acceptance</div>
+              <div class="timeline-event">Passport Information Due <span class="urgent-badge">Urgent</span></div>
+              <p>Recipients must submit complete passport information — including a photo of the passport photo page — within 48 hours of accepting the scholarship. Failure to submit on time may result in forfeiture of the award.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">6</div>
+            <div class="timeline-body">
+              <div class="timeline-date">May 9–15, 2026</div>
+              <div class="timeline-event">Panama Consulting Service Trip</div>
+              <p>GBB IU departs for Panama. Flight booking is subject to confirmed arrival/departure windows provided by Global Brigades.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SELECTION PROCESS ===== -->
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-label">How We Choose</div>
+        <h2 id="process-title">Selection Process</h2>
+        <p class="section-intro">Our goal is a fair, consistent, and thorough review. Every applicant goes through the same steps.</p>
+        <div class="process-steps" role="list">
+          <div class="process-step" role="listitem">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="step-num" aria-hidden="true">Step 1</div>
+            <div class="step-title">Application Review</div>
+            <p>The selection committee reviews all submitted applications, resumes, and essays. Reviewers assess each application against the scholarship-specific criteria and score independently.</p>
+          </div>
+          <div class="process-step" role="listitem">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="step-num" aria-hidden="true">Step 2</div>
+            <div class="step-title">Finalist Selection</div>
+            <p>Top applicants per scholarship are identified as finalists and invited to a Zoom interview. Executive Board members may participate in review to provide broad organizational perspective.</p>
+          </div>
+          <div class="process-step" role="listitem">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <div class="step-num" aria-hidden="true">Step 3</div>
+            <div class="step-title">Finalist Interviews</div>
+            <p>Interviews run 10–15 minutes via Zoom. All finalists are asked the same set of questions and evaluated against a standardized scoring rubric — ensuring a fair comparison across candidates.</p>
+          </div>
+          <div class="process-step" role="listitem">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="step-num" aria-hidden="true">Step 4</div>
+            <div class="step-title">Final Decision &amp; Notification</div>
+            <p>The selection committee deliberates and awards one recipient per scholarship. All applicants — finalists and non-finalists — are notified of the outcome by the decision date.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POLICIES ===== -->
+    <section class="section" id="policies" aria-labelledby="policies-title">
+      <div class="container">
+        <div class="section-label">Important Policies</div>
+        <h2 id="policies-title">Scholarship Policies</h2>
+        <p class="section-intro">Please read these carefully before applying. Accepting a scholarship means agreeing to these terms.</p>
+        <div class="policies-grid">
+
+          <div class="policy-block">
+            <div class="policy-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Passport Submission — 48-Hour Deadline</h3>
+            <p>Upon accepting a scholarship, recipients must submit complete passport information — including a clear photo of the passport photo page — within <strong>48 hours</strong>. This information is required before GBB can book your flight. Failure to meet this deadline may result in forfeiture of the scholarship, with no exceptions outside of documented emergencies.</p>
+          </div>
+
+          <div class="policy-block">
+            <div class="policy-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3a1 1 0 0 0-2 0v6l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+            </div>
+            <h3>Flight Cap &amp; Booking Method</h3>
+            <p>The scholarship covers up to <strong>$567 per recipient</strong> for a round-trip flight. GBB IU books all flights directly on the recipient's behalf — recipients do not purchase their own ticket. If the actual flight cost exceeds $567, the recipient is responsible for the difference. All bookings are subject to confirmed arrival and departure windows provided by Global Brigades.</p>
+          </div>
+
+          <div class="policy-block">
+            <div class="policy-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Program Fee Responsibility</h3>
+            <p>The scholarship covers the flight only. All recipients remain responsible for the <strong>$1,590 program fee</strong>, regardless of scholarship status. Fundraising efforts through GBB IU may reduce this amount, but the student is ultimately responsible for any remaining balance.</p>
+          </div>
+
+          <div class="policy-block">
+            <div class="policy-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3>Withdrawal Policy</h3>
+            <p>If a scholarship recipient withdraws from the trip after GBB has booked their flight, they may be held responsible for any non-recoverable costs incurred. Airline credits, when applicable, typically remain in the traveler's name and are not transferable to GBB IU or other participants. Exceptions to this policy are considered only for documented emergencies at the discretion of GBB IU leadership.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section--alt" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-label">Questions</div>
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <p class="section-intro">Don't see your question here? Reach out at <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>.</p>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              Can I apply for more than one scholarship?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-1" hidden>
+              <p>Yes. You may apply for any scholarship you believe you are a strong candidate for. If you are a finalist for multiple awards, the committee will consider which scholarship is the best fit during the interview stage. Only one scholarship will be awarded per recipient.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              What if my flight costs more than $567?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-2" hidden>
+              <p>The scholarship covers up to $567. If GBB books a flight that exceeds this amount, you are responsible for the difference. GBB will communicate the exact flight cost to you before booking is finalized whenever possible.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              Will the $1,590 program fee decrease through fundraising?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-3" hidden>
+              <p>Possibly. GBB IU organizes fundraising efforts that may reduce individual program fee contributions. However, the student is ultimately responsible for any remaining balance. We cannot guarantee a specific reduction, so please plan financially as if the full $1,590 will be due.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              Do I need a passport to apply?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-4" hidden>
+              <p>You do not need a passport to apply. However, if you are awarded a scholarship, you must have a valid U.S. passport and submit complete passport information — including a photo of the passport photo page — within 48 hours of accepting the award. We strongly encourage you to obtain or renew your passport well before the application deadline.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+              What happens if I don't submit my passport information in time?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-5" hidden>
+              <p>Failure to submit complete passport information within 48 hours of accepting the scholarship may result in forfeiture of the award. GBB cannot book your flight without this information, and delay can affect the group's travel arrangements. Exceptions are considered only for documented emergencies.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+              What does the interview look like?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-6" hidden>
+              <p>Finalist interviews are 10–15 minutes via Zoom. All finalists are asked the same questions and scored on a standardized rubric by the selection committee. The interview is conversational, not a formal presentation — the committee wants to understand your motivation and fit. Executive Board members may participate to provide broader organizational perspective.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+              What if I need to withdraw after my flight is booked?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-7" hidden>
+              <p>If you withdraw after GBB has booked your flight, you may be responsible for non-recoverable costs. Airline credits typically remain in the traveler's name — they do not transfer to GBB IU. We take withdrawal policy seriously because non-refundable bookings affect the whole group. Please only apply if you are fully committed to attending. Exceptions are considered only for documented emergencies at the discretion of GBB leadership.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-8">
+              Who books the flight — me or GBB?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-8" hidden>
+              <p>GBB books the flight directly on your behalf. You do not purchase your own ticket. This ensures group coordination and allows GBB to manage the scholarship cap. Flight booking is subject to confirmed arrival/departure windows provided by Global Brigades.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-9">
+              Is this scholarship open to all IU students?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-9" hidden>
+              <p>Eligibility requirements are detailed in the application. Generally, applicants must be enrolled IU students who have met any GBB IU participation prerequisites for the Panama 2026 trip. Please review the application form for the most current eligibility criteria.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-10">
+              When will I find out if I was selected?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-10" hidden>
+              <p>All applicants will be notified by the decision date listed in the Timeline section above. Both selected recipients and non-selected applicants will receive an email notification.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-11">
+              What do I need to submit with my application?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-11" hidden>
+              <p>Applications include: the completed application form, an updated resume, and short essay responses. Essay prompts vary by scholarship and are included in the application form. Please read prompts carefully and tailor your responses to the specific scholarship you are applying for.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-12">
+              I have a question that isn't answered here. Who should I contact?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-12" hidden>
+              <p>Email us at <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a> or join our <a href="{{GROUPME_LINK}}">GroupMe</a> for the quickest response. We're happy to help.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">GBB IU</div>
+        <p>Global Business Brigades<br />at Indiana University</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Quick Links</div>
+          <ul role="list">
+            <li><a href="#costs">Costs &amp; Coverage</a></li>
+            <li><a href="#scholarships">Scholarships</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#process">Selection Process</a></li>
+            <li><a href="#policies">Policies</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Contact &amp; Community</div>
+          <ul role="list">
+            <li><a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></li>
+            <li><a href="{{GROUPME_LINK}}">Join our GroupMe</a></li>
+            <li><a href="{{WEBSITE_HOME_LINK}}">GBB IU Website</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p>Ready to apply?</p>
+        <a href="{{APPLICATION_LINK}}" class="btn btn-primary">Apply for a Scholarship</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Global Business Brigades at Indiana University · Panama 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── FAQ Accordion ──────────────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        const answerId = btn.getAttribute('aria-controls');
+        const answer = document.getElementById(answerId);
+
+        // Close all others
+        document.querySelectorAll('.faq-question').forEach(other => {
+          if (other !== btn) {
+            other.setAttribute('aria-expanded', 'false');
+            const otherId = other.getAttribute('aria-controls');
+            const otherAns = document.getElementById(otherId);
+            if (otherAns) otherAns.hidden = true;
+          }
+        });
+
+        btn.setAttribute('aria-expanded', String(!expanded));
+        answer.hidden = expanded;
+      });
+    });
+
+    // ── Smooth Scroll ──────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 72; // nav height
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ── Mobile Nav Toggle ──────────────────────────────────────
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      navLinks.classList.toggle('nav-links--open');
+    });
+
+    // Close mobile nav when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('nav-links--open');
+      });
+    });
+  </script>
+
+</body>
+</html>
